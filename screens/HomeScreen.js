@@ -132,7 +132,7 @@ export default function HomeScreen() {
                 {/* degre celcius */}
                 <View className="space-y-2">
                   <Text className="text-center font-bold text-white text-6xl ml-5">
-                    {current?.temp_c}&#176;c
+                    {current?.temp_c}&#176;
                   </Text>
                   <Text className="text-center text-white text-xl tracking-widest">
                     {current?.condition?.text}
@@ -156,7 +156,7 @@ export default function HomeScreen() {
                   </View>
                   <View className="flex-row space-x-2 items-center">
                     <Image source={require('../assets/icons/sun.png')} 
-                     className="h-6 w-6"/>
+                     className="h-3 w-3"/>
                      <Text className="text-white font-semibold text-base">
                         {weather?.forecast?.forecastday[0]?.astro?.sunrise}
                      </Text>
