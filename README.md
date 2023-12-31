@@ -67,7 +67,4 @@ If you'd like to contribute to this project, please follow these guidelines:
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Contact
-
-For any inquiries, please contact Axel RENAULT at [your.email@example.com].
 
