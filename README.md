@@ -1,7 +1,8 @@
 # Weather App
 
-![Weather App Logo](![image](https://github.com/AxelRENAULT92/weatherApp/assets/153505101/f35dc491-259f-450a-94c6-2466175940c4)
-) 
+![image](https://github.com/AxelRENAULT92/weatherApp/assets/153505101/1a3a4810-ec41-4897-b334-bcb9b125d1a6)
+
+
 
 ## Overview
 
