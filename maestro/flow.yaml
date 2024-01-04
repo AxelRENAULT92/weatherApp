@@ -1,0 +1,4 @@
+appId: host.exp.Exponent
+---
+- runFlow: e2e/searchCity.yaml
+- runFlow: e2e/searchOtherCity.yaml
