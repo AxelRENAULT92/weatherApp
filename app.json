@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.app"
     },
     "android": {
       "adaptiveIcon": {
@@ -23,6 +24,7 @@
         "backgroundColor": "#ffffff"
       }
     },
+    "package": "com.example.app",
     "web": {
       "favicon": "./assets/favicon.png"
     }
