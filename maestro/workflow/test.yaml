@@ -1,0 +1,41 @@
+# Search test
+appId: host.exp.Exponent
+---
+- openLink: exp://192.168.1.66:8081
+- runFlow:
+    when:
+      visible: "Chercher une ville"
+    commands:
+        - tapOn:
+            point: 89%,10%
+        - tapOn:
+            point: 89%,10%
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - assertVisible: Chercher une ville
+        - tapOn: "Chercher une ville"
+        - inputText: "Paris"
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - tapOn:
+            point: "50%,18%"
+        - assertVisible: "Paris, France"
+        - stopApp
+- runFlow:
+    when:
+      notVisible: "Chercher une ville"
+    commands:
+        - tapOn:
+            point: 89%,10%
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - assertVisible: Chercher une ville
+        - tapOn: "Chercher une ville"
+        - inputText: "Paris"
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - tapOn:
+            point: "50%,18%"
+        - assertVisible: "Paris, France"
+        - stopApp
+
