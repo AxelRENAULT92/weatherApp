@@ -1,0 +1,42 @@
+# searchCity test
+appId: host.exp.Exponent
+name: Paris weather test
+---
+- openLink: exp://192.168.1.66:8081
+- runFlow:
+    when:
+      visible: "Chercher une ville"
+    commands:
+        - tapOn:
+            point: 89%,10%
+        - tapOn:
+            point: 89%,10%
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - assertVisible: Chercher une ville
+        - tapOn: "Chercher une ville"
+        - inputText: "Atlanta"
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - tapOn:
+            point: "50%,18%"
+        - assertVisible: "Atlanta, United States of America"
+        - stopApp
+- runFlow:
+    when:
+      notVisible: "Chercher une ville"
+    commands:
+        - tapOn:
+            point: 89%,10%
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - assertVisible: Chercher une ville
+        - tapOn: "Chercher une ville"
+        - inputText: "Atlanta"
+        - waitForAnimationToEnd:
+            timeout: 2000
+        - tapOn:
+            point: "50%,18%"
+        - assertVisible: "Atlanta, United States of America"
+        - stopApp
+
